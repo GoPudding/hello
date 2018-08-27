@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>fn-demo</title>
+	<meta id="meta" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title></title>
+	<script>
+		function rem(id) {
+			var scale = 1 / window.devicePixelRatio; //   1/像素比
+			document.getElementById(id)['content'] = 'width=device-width, user-scalable=no, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale;
+			var coefficient = document.documentElement.clientWidth / 12; // 屏幕宽/12
+			document.getElementsByTagName("html")[0].style.fontSize = coefficient + "px"; //设置根字号
+
+			return this;
+		}
+		rem('meta');
+	</script>
+	<style>
+		div {
+			width: 1rem;
+			height: 1rem;
+			background: pink;
+		}
+	</style>
 </head>
 <body>
-	<script src="./fn.js"></script>
-	<script>
-		let a = new Fn({name:'feifei',age: '18'});
-		// a.hah();
-		a.say();
-		// a.hello();
-		alert('branch01');
-
-		alert('we');
-		
-	</script>
+	<div></div>
 </body>
 </html>
