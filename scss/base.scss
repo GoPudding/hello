@@ -1,0 +1,46 @@
+$color: #CC6666;
+$border_color: #cccccc;
+
+h1,h2,h3,h4,h5,h6,p,dl,dd,hr,body,ul,ol {
+	margin: 0;
+}
+ul,ol,th,td,button,input[type="submit"],input[type="text"], input[type="password"],textarea {
+	padding: 0;
+}
+body, button, a {
+	color: $color;
+}
+del, s, a{
+	text-decoration: none;
+}
+a:hover {
+	color: darken($color, 12%);
+}
+ul,ol {
+	list-style: none;
+}
+b,strong {
+	font-weight: normal;
+}
+sub,sup {
+    font-size: smaller;
+}
+sup {
+	vertical-align: sup;
+}
+sub {
+	vertical-align: sub;
+}
+table,button {
+	border: none;
+}
+select,input[type="file"],input[type="text"], input[type="password"],textarea {
+	outline-style: none;
+}
+input[type="text"], input[type="password"],textarea {
+	border: 1px solid $border_color;
+	&:focus {
+		border-color: darken($border_color, 12%);
+    }
+}
+

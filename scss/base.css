@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6, p, dl, dd, hr, body, ul, ol {
+  margin: 0; }
+
+ul, ol, th, td, button, input[type="submit"], input[type="text"], input[type="password"], textarea {
+  padding: 0; }
+
+body, button, a {
+  color: #CC6666; }
+
+del, s, a {
+  text-decoration: none; }
+
+a:hover {
+  color: #b83d3d; }
+
+ul, ol {
+  list-style: none; }
+
+b, strong {
+  font-weight: normal; }
+
+sub, sup {
+  font-size: smaller; }
+
+sup {
+  vertical-align: sup; }
+
+sub {
+  vertical-align: sub; }
+
+table, button {
+  border: none; }
+
+select, input[type="file"], input[type="text"], input[type="password"], textarea {
+  outline-style: none; }
+
+input[type="text"], input[type="password"], textarea {
+  border: 1px solid #cccccc; }
+  input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #adadad; }
+
+/*# sourceMappingURL=base.css.map */
